@@ -1,20 +1,18 @@
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
-public class Tutorial extends JPanel
+public class MainForm extends JPanel
 {
     JTable jt;
 
     // Constructors are usually used to initialize components in classes.
     // That's it. This example is a bad practice. Use functions instead for
     // production code
-    public Tutorial()
+    public MainForm()
     {
         this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
         // Columns for table
@@ -114,7 +112,7 @@ public class Tutorial extends JPanel
     public static void main(String[] args)
     {
         JFrame jf = new JFrame("Some title");
-        Tutorial t = new Tutorial();
+        MainForm t = new MainForm();
         jf.setSize(900, 900);
         jf.setVisible(true);
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
